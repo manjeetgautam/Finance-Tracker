@@ -1,9 +1,12 @@
 import React from 'react'
 import "./Button.css"
 
-const Button = ({text, onclick ,blue}) => {
+const Button = ({text, onclick ,blue , disabled}) => {
   return (
-    <div className={blue ? "btn btn-blue" : "btn"} onclick={onclick}>{text}</div>
+    <div className={blue ? "btn btn-blue" : "btn"}
+     onClick={onclick}
+     disabled={disabled}
+     >{text}</div>
   )
 }
 
